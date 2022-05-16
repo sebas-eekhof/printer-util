@@ -8,7 +8,7 @@
 import Foundation
 
 class CLI {
-    static let commands: [String] = ["list"];
+    static let commands: [String] = ["list", "default", "show", "print"];
     
     static func getFirst() -> String? {
         if(CommandLine.arguments.count <= 1) {

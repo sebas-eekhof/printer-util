@@ -8,5 +8,5 @@
 import Foundation
 
 func showHelpMenu() -> Void {
-    print("Dit is een help menu")
+    print("USAGE: \(CLI.execName()) <\(CLI.commands.joined(separator: ","))>")
 }

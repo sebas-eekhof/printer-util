@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		253DEA2F28323DFC002482C6 /* cli.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253DEA2E28323DFC002482C6 /* cli.swift */; };
+		253DEA3128323F17002482C6 /* helpMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253DEA3028323F17002482C6 /* helpMenu.swift */; };
+		253DEA3428323FCE002482C6 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 253DEA3328323FCE002482C6 /* ArgumentParser */; };
+		253DEA3728324031002482C6 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253DEA3628324031002482C6 /* List.swift */; };
+		253DEA3C28324C47002482C6 /* outputEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253DEA3B28324C47002482C6 /* outputEncoding.swift */; };
+		253DEA3E28324E68002482C6 /* Printer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253DEA3D28324E68002482C6 /* Printer.swift */; };
+		25BC8746283279D800F4373E /* CFUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BC8745283279D800F4373E /* CFUtils.swift */; };
+		25BC874928327DE500F4373E /* PrinterState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BC874828327DE500F4373E /* PrinterState.swift */; };
+		25BC874B2832878A00F4373E /* PrinterPaper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BC874A2832878A00F4373E /* PrinterPaper.swift */; };
+		25BC874D283297D400F4373E /* Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BC874C283297D400F4373E /* Default.swift */; };
+		25BC874F28329E9800F4373E /* Show.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BC874E28329E9800F4373E /* Show.swift */; };
+		25BC87512832A77C00F4373E /* Print.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BC87502832A77C00F4373E /* Print.swift */; };
 		25C17A5F282EAFB100C3D942 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C17A5E282EAFB100C3D942 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +35,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		253DEA2E28323DFC002482C6 /* cli.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cli.swift; sourceTree = "<group>"; };
+		253DEA3028323F17002482C6 /* helpMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helpMenu.swift; sourceTree = "<group>"; };
+		253DEA3628324031002482C6 /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
+		253DEA3B28324C47002482C6 /* outputEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = outputEncoding.swift; sourceTree = "<group>"; };
+		253DEA3D28324E68002482C6 /* Printer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Printer.swift; sourceTree = "<group>"; };
+		25BC8745283279D800F4373E /* CFUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CFUtils.swift; sourceTree = "<group>"; };
+		25BC874828327DE500F4373E /* PrinterState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrinterState.swift; sourceTree = "<group>"; };
+		25BC874A2832878A00F4373E /* PrinterPaper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrinterPaper.swift; sourceTree = "<group>"; };
+		25BC874C283297D400F4373E /* Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Default.swift; sourceTree = "<group>"; };
+		25BC874E28329E9800F4373E /* Show.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Show.swift; sourceTree = "<group>"; };
+		25BC87502832A77C00F4373E /* Print.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Print.swift; sourceTree = "<group>"; };
 		25C17A5B282EAFB100C3D942 /* printer-util */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "printer-util"; sourceTree = BUILT_PRODUCTS_DIR; };
 		25C17A5E282EAFB100C3D942 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -32,12 +55,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				253DEA3428323FCE002482C6 /* ArgumentParser in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		253DEA352832400C002482C6 /* commands */ = {
+			isa = PBXGroup;
+			children = (
+				253DEA3628324031002482C6 /* List.swift */,
+				25BC874C283297D400F4373E /* Default.swift */,
+				25BC874E28329E9800F4373E /* Show.swift */,
+				25BC87502832A77C00F4373E /* Print.swift */,
+			);
+			path = commands;
+			sourceTree = "<group>";
+		};
+		253DEA3A283242A8002482C6 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				25BC874728327DDA00F4373E /* Printer */,
+				253DEA2E28323DFC002482C6 /* cli.swift */,
+				253DEA3028323F17002482C6 /* helpMenu.swift */,
+				253DEA3B28324C47002482C6 /* outputEncoding.swift */,
+				25BC8745283279D800F4373E /* CFUtils.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		25BC874728327DDA00F4373E /* Printer */ = {
+			isa = PBXGroup;
+			children = (
+				253DEA3D28324E68002482C6 /* Printer.swift */,
+				25BC874828327DE500F4373E /* PrinterState.swift */,
+				25BC874A2832878A00F4373E /* PrinterPaper.swift */,
+			);
+			path = Printer;
+			sourceTree = "<group>";
+		};
 		25C17A52282EAFB100C3D942 = {
 			isa = PBXGroup;
 			children = (
@@ -57,6 +114,8 @@
 		25C17A5D282EAFB100C3D942 /* printer-util */ = {
 			isa = PBXGroup;
 			children = (
+				253DEA3A283242A8002482C6 /* utils */,
+				253DEA352832400C002482C6 /* commands */,
 				25C17A5E282EAFB100C3D942 /* main.swift */,
 			);
 			path = "printer-util";
@@ -78,6 +137,9 @@
 			dependencies = (
 			);
 			name = "printer-util";
+			packageProductDependencies = (
+				253DEA3328323FCE002482C6 /* ArgumentParser */,
+			);
 			productName = "printer-util";
 			productReference = 25C17A5B282EAFB100C3D942 /* printer-util */;
 			productType = "com.apple.product-type.tool";
@@ -106,6 +168,9 @@
 				Base,
 			);
 			mainGroup = 25C17A52282EAFB100C3D942;
+			packageReferences = (
+				253DEA3228323FCE002482C6 /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+			);
 			productRefGroup = 25C17A5C282EAFB100C3D942 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -120,6 +185,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				253DEA3728324031002482C6 /* List.swift in Sources */,
+				253DEA3C28324C47002482C6 /* outputEncoding.swift in Sources */,
+				25BC8746283279D800F4373E /* CFUtils.swift in Sources */,
+				25BC874B2832878A00F4373E /* PrinterPaper.swift in Sources */,
+				253DEA3E28324E68002482C6 /* Printer.swift in Sources */,
+				253DEA2F28323DFC002482C6 /* cli.swift in Sources */,
+				25BC874F28329E9800F4373E /* Show.swift in Sources */,
+				25BC87512832A77C00F4373E /* Print.swift in Sources */,
+				25BC874928327DE500F4373E /* PrinterState.swift in Sources */,
+				253DEA3128323F17002482C6 /* helpMenu.swift in Sources */,
+				25BC874D283297D400F4373E /* Default.swift in Sources */,
 				25C17A5F282EAFB100C3D942 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,11 +296,12 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -243,9 +320,11 @@
 		25C17A63282EAFB100C3D942 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2FP64D7VUR;
 				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.jsmecommerce.printer-util";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -254,9 +333,11 @@
 		25C17A64282EAFB100C3D942 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2FP64D7VUR;
 				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.jsmecommerce.printer-util";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -284,6 +365,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		253DEA3228323FCE002482C6 /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-argument-parser.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		253DEA3328323FCE002482C6 /* ArgumentParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 253DEA3228323FCE002482C6 /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = ArgumentParser;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 25C17A53282EAFB100C3D942 /* Project object */;
 }

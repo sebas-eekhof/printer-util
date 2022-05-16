@@ -6,3 +6,8 @@
 //
 
 import Foundation
+import ArgumentParser
+
+struct Help: ParsableCommand {
+    
+}
